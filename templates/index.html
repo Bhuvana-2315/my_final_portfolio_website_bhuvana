@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>BHUVANESHWARI </h1>
+    <img src="{{ url_for('static', filename='profile.jpg') }}" width="120">
+    <p class="tagline">
+        Aspiring Web Developer | BCA Student | Passionate Learner
+    </p>
+    <hr>
+
+    <h2>About Me</h2>
+    <p>
+        I am a motivated BCA student with a strong interest in tech and business.
+        I enjoy building simple and creative websites while learning new technologies.
+        My goal is to become a full-stack developer and work on real-world projects.
+    </p>
+
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML & CSS</li>
+        <li>Python & Flask</li>
+        <li>Git & GitHub</li>
+        <li>PostgreSQL Database</li>
+        <li>Problem Solving & Communication</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <p>
+        <b>Portfolio Website:</b> Built with HTML, CSS, Flask, and PostgreSQL.
+        Collects user data via contact form and stores it in a database.
+    </p>
+
+    <h2>Contact Me</h2>
+    <form action="/submit" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required><br><br>
+        <input type="email" name="email" placeholder="Your Email" required><br><br>
+        <textarea name="message" placeholder="Your Message" required></textarea><br><br>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <hr>
+    <p>© 2026 BHUVANESHWARI | All Rights Reserved</p>
+</body>
+
+</html>
